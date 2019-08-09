@@ -1,0 +1,28 @@
+{
+  "name": "www.go7th.top",
+  "version": "1.0.0",
+  "main": "web3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "go7th",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "commander": "^2.20.0",
+    "config-lite": "^2.1.0",
+    "ejs": "^2.6.2",
+    "ethereumjs-testrpc": "^6.0.3",
+    "ethjs-provider-http": "^0.1.6",
+    "ethjs-query": "^0.3.8",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "log4js": "^3.0.6",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "web3": "^1.0.0"
+  },
+  "description": ""
+}

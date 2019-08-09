@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/home/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/home/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- <div class="" style="background:#070a0e;position: absolute; top: 0; left: 0; right: 0;padding-top:20rem;z-index:-1;">
+
+  </div> -->
+
+
+<div class="card-panel red lighten-1" id="redinfo" >Please enable MetaMask or visit this page in a Web3 browser to interact with the Compound protocol</div>
+<div style="background:#070a0e;width:100%!important;padding-bottom:100px;">
+  <nav style="background:#070a0e;box-shadow:none;" class="" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" style="background: url(/home/images/compound-mark.svg) no-repeat center center; background-size: contain; background-color: transparent; width: 27px; height: 64px;" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">ETH</a></li>
+        <li><a href="#">USD</a></li>
+        <li><a href="#">address</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">ETH</a></li>
+        <li><a href="#">USD</a></li>
+        <li><a href="#">address</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="container">
+     <div class="section">
+         <!--   Icon Section   -->
+         <div class="row">
+             <div class="col l10 offset-l1 s12">
+                 <div class="grey-section" >
+                     <span class="card-h1">Supply Balance</span>
+                     <span class="card-data main-color">0.0000</span>
+                 </div>
+                 <div class="grey-section">
+                     <span class="card-h1">Borrow Balance</span>
+                     <span class="card-data other-color">0.0000</span>
+
+                 </div>
+                 <div class="grey-section">
+                     <span class="card-h1">Borrowing Power</span>
+                     <span class="card-data">0.0000</span>
+                 </div>
+                 <div class="clearfix"> </div>
+             </div>
+         </div>
+     </div>
+  </div>
+</div>
+
+<div class="container" style="position: relative; top: -5.9rem; left: 0;">
+
+    <div class="section">
+      <div class="row">
+        <div class="col l10 offset-l1 s12">
+            <div class=" white-section" >
+                <div class="header">
+                    <div class="c-h1">Basic Attention Token</div>
+                </div>
+            </div>
+            <div class=" white-section">
+                <div class="header">
+                    <div class="c-h1">Balance</div>
+                </div>
+                <div class="content">
+                    <div class="row modal-buttons">
+                        <div class="col s6">
+                            <a href="#" class="btn-large waves-effect mainbg-color">SUPPLY</a>
+                        </div>
+                        <div class="col s6">
+                            <a href="#" class="btn-large waves-effect otherbg-color">BORROW</a>
+                        </div>
+                    </div>
+                    <div class="row modal-buttons">
+                        <div class="col s6">
+                            <a  href="#modal1" class="btn-large waves-effect otherbg-color">SEND</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col l10 offset-l1 s12">
+            <div class="col l12 white-section" >
+                <div class="header">
+                    <div class="c-h1">Basic Attention Token</div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+</div>
+
+<!-- <a class="waves-effect waves-light btn" href="#modal1">模态</a> -->
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>模态标题</h4>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="first_name2" type="text" v-model="address" class="validate">
+            <label class="active" for="first_name2">address</label>
+        </div>
+       <div class="input-field col s12">
+         <input id="first_name2" type="text" v-model="coins" class="validate">
+         <label class="active" for="first_name2">coins</label>
+       </div>
+       <div class="input-field col s12">
+           <a  href="#" id="sendTo" @click="sendCoins(address,coins)" class="col s12 btn-large waves-effect left otherbg-color">SEND</a>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/home/js/materialize.js"></script>
+  <script src="/home/js/init.js"></script>
+  <script src="/home/js/web3.min.js"></script>
+  <!-- <script src="/home/js/web3/src/index.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>-->
+  <!-- <script src="..//web3.min.js"></script> -->
+  <!-- <script language="javascript" type="text/javascript" src="web3.min.js"></script> -->
+  <script language="javascript" type="text/javascript" src="/home/js/cryptozombies_abi.js"></script>
+  <script language="javascript" type="text/javascript" src="/home/js/ContractFunc.js"></script>
+  <script language="javascript" type="text/javascript" src="/home/js/vue.js"></script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+     $('.modal').modal();
+     if (typeof web3 !== 'undefined') {
+       // Use Mist/MetaMask's provider
+       web3js = new Web3(web3.currentProvider);
+     } else {
+       // Handle the case where the user doesn't have Metamask installed
+       // Probably show them a message prompting them to install Metamask
+     }
+   });
+
+    var sendVue = new Vue({
+        el:'#modal1',
+        data:{
+            address:null,
+            coins:0,
+        },
+        methods:{
+            sendCoins:function(address,coins){
+              if (web3.eth.accounts[0]) {
+                var userAccount = web3.eth.accounts[0];
+                console.log(web3.version);
+                ContractFunc.sendTo(address,coins*Math.pow(10,18))
+                .then(ret=>{
+                    console.log(ret);
+                })
+                .catch(function(err){
+                    console.log(err);
+                })
+              }
+              sendVue.$data.address=null;
+              sendVue.$data.coins=null;
+              $('#modal1').modal('close');
+            }
+        }
+    })
+
+
+
+
+    </script>
+  </body>
+</html>

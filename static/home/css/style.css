@@ -1,0 +1,91 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.white-section{
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    width: 47.5%;
+    margin:.95rem 1%;
+    float:left;
+}
+.white-section .header{
+    border-bottom: 1px solid #e3e9eb;
+padding: 1.33rem 1.995rem;
+font-size: 1.1rem;
+}
+.white-section .content{
+    padding: 1.33rem 1.995rem;
+    font-size: .95rem;
+}
+.white-section .c-h1{
+    line-height: 1.75rem;
+    font-size: 1.1rem;
+}
+.grey-section{
+    background: #141e27;
+    border-radius: 3px;
+    padding: 1.33rem 1.995rem!important;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    color:#fff;
+    width: 31%;
+    margin:0 1%;
+    float:left;
+}
+.grey-section span.card-h1{
+    font-weight: 600;
+    font-size: 12px;
+    color: #aab8c1;
+    display: block;
+}
+.grey-section span.card-data{
+    font-size: 1.39rem;
+    font-weight: 300;
+    color: #fff;
+    margin-top: .7rem;
+}
+.main-color{
+    color: #00d395!important;
+}
+.other-color{
+    color: #9669ed!important;
+}
+.mainbg-color{
+    color: #fff;
+    background:#00d395!important;
+}
+.otherbg-color{
+    color: #fff;
+    background:#9669ed!important;
+}
+#redinfo{
+    margin:0;
+    display: none;
+    color:#fff;
+    text-align: center;
+    font-size: 1rem;
+}
+@media(max-width:992px){
+    .grey-section{
+        width: 100%;
+        margin:1.5% 0;
+        float:none;
+    }
+    .white-section{
+        width: 100%;
+        margin:1.5% 0;
+        float:none;
+    }
+}

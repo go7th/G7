@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "api3200",
+      "script": "/root/codes/api/web3.js",
+      "cwd": "./",
+      "watch": [
+        "config",
+        "routes",
+      ],
+      "args": "-p 3200",
+      "error_file": "/root/data/pm2log/api3200-err.log",
+      "out_file": "/root/data/pm2log/api3200.log",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "exec_mode": "cluster_mode",                // 应用启动模式，支持fork和cluster模式
+      "instances": 3,
+
+    }
+  ]
+}
